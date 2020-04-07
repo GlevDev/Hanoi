@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>La Tour de Hanoi</h1>
+  <p>Le but du jeu est de déplacer les anneaux sur la deuxième ou troisième tour, en les disposant par taille décroissante. Pour ceci, faites glisser les pièces.</p>
+  <div class="game-container">
+    <div id="tour1">
+      <svg width="200" height="250">
+        <rect x="90" y="0" width="20" height="230" fill="#333333"/>
+        <rect x="0" y="230" width="200" height="20" fill="#333333"/>
+        <foreignObject id="tour1-container" x="0" y="0" width="200" height="230">
+          
+        </foreignObject>
+      </svg> 
+    </div>
+    <div id="tour2">
+      <svg width="200" height="250">
+        <rect x="90" y="0" width="20" height="230" fill="#333333"/>
+        <rect x="0" y="230" width="200" height="20" fill="#333333"/>
+        <foreignObject id="tour2-container" x="0" y="0" width="200" height="230">
+        </foreignObject>
+      </svg>
+    </div>
+    <div id="tour3">
+      <svg width="200" height="250">
+        <rect x="90" y="0" width="20" height="230" fill="#333333"/>
+        <rect x="0" y="230" width="200" height="20" fill="#333333"/>
+        <foreignObject id="tour3-container" x="0" y="0" width="200" height="230">
+        </foreignObject>
+      </svg>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

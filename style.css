@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.game-container svg {
+  margin: 0 10px;
+}
+
+.anneau {
+  display: block;
+  background-color: aqua;
+  position: absolute;
+  text-align: center;
+  height: 20px;
+  border: solid 1px black;
+}
+
+.anneaux {
+  display: block;
+  width: 180px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  text-align: center;
+}
+
+.over {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.draggable {
+  cursor: pointer;
+}
