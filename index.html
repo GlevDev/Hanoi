@@ -9,6 +9,10 @@
 <body>
   <h1>La Tour de Hanoi</h1>
   <p>Le but du jeu est de déplacer les anneaux sur la deuxième ou troisième tour, en les disposant par taille décroissante. Pour ceci, faites glisser les pièces.</p>
+  <div class="slider-container">
+    <p id="text-anneaux">7 anneaux</p>
+    <input type="range" min="3" max="10" value="7" class="slider" id="slider">
+  </div>
   <div class="game-container">
     <div id="tour1">
       <svg width="200" height="250">
@@ -36,6 +40,7 @@
       </svg>
     </div>
   </div>
+  <button id="start">Redémarrer</button>
   <script src="script.js"></script>
 </body>
 </html>
